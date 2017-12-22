@@ -1,0 +1,45 @@
+/* Theme Colors */
+/* Please adjust as needed, this is just for templating */
+$bg-color: #FFFFFF;
+$contrast-bg-color: #AFEEEE; // magnolia
+$primary-color: #008B8B; // dark cyan
+$accent-color:  #F8DE7E; // jasmine
+$contrast-accent: #FFFF66; // laser lemon
+$font-color: #000000;
+
+/* Mixins */
+/* FlexBox for cross-browser compatibility */
+/* Please use wherever you use FlexBox */
+@mixin flex-style($flow, $justify) {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  flex-flow: $flow;
+  justify-content: $justify;
+}
+
+@mixin box-style($style) {
+  -webkit-box-sizing: $style;
+  -moz-box-sizing: $style;
+  box-sizing: $style;
+}
+
+/* Fixes bug where borders and padding add weird spacing */
+/* Only has to be written once */
+html {
+  @include box-style(border-box);
+}
+
+*, *:before, *:after {
+  @include box-style(inherit);
+}
+/* ------------------------------------------------------  */
+
+body {
+  margin: 0;
+}
+
+/* Style Settings */
