@@ -51,4 +51,10 @@ body {
   font-family: 'Slabo';
 }
 
+.Particles {
+  height: 100%;
+  position: fixed;
+  width: 100%;
+}
+
 

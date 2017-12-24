@@ -6,18 +6,14 @@ class Artwork extends Component {
   render() {
     return (
       <Slider>
-          <Slider.Item style={{ backgroundColor: '#29225f' }}>
+          <Slider.Item style={{ backgroundColor: '#555' }}>
             <div className="Artwork">
-            hello.<br />
-            cześć.<br />
-            willkommen.<br />
-            aloha.<br />
+            this is where my artwork goes lmao
             </div>
           </Slider.Item>
-          <Slider.Item style={{ backgroundColor: '#0c2759' }}>
-            <div className="buttons">
-              <Link to='/artwork' style={{ color: 'white', textDecoration: 'none' }}>Artwork.</Link><br />
-              <Link to='/design'style={{ color: 'white', textDecoration: 'none' }}>Design.</Link><br />
+          <Slider.Item style={{ backgroundColor: '#666' }}>
+            <div className="links">
+              some links to some shit
             </div>
           </Slider.Item>
       </Slider>
