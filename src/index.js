@@ -12,9 +12,11 @@ import reducers from './reducers';
 
 /* Containers */
 import App from './containers/App';
+import Artwork from './containers/Artwork';
+import Design from './containers/Design';
 
 /* Sassy */
-import './styles/index.scss';
+import './index.css';
 
 /* ----- STORE ----- */
 const store = createStore(
@@ -30,6 +32,8 @@ ReactDOM.render(
     <Router>
       <div>
         <Route exact path="/" component={ App } />
+        <Route exact path="/artwork" component={ Artwork } />
+        <Route exact path="/design" component={ Design } />
       </div>
     </Router>
   </Provider>,

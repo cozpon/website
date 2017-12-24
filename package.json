@@ -37,8 +37,10 @@
     "react": "^16.2.0",
     "react-dev-utils": "^4.2.1",
     "react-dom": "^16.2.0",
+    "react-images": "^0.5.13",
     "react-redux": "^5.0.6",
     "react-router-dom": "^4.2.2",
+    "react-viewport-slider": "^1.0.0",
     "redux": "^3.7.2",
     "redux-thunk": "^2.2.0",
     "sequelize": "^4.28.6",
@@ -53,7 +55,8 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js --env=jsdom"
+    "test": "node scripts/test.js --env=jsdom",
+    "server": "nodemon ./server/server.js"
   },
   "jest": {
     "collectCoverageFrom": [

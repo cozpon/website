@@ -1,0 +1,52 @@
+body {
+  font-family: 'Helvetica Neue', Helvetica, arial, sans-serif;
+}
+
+.viewport-slider-item {
+  align-items: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.viewport-slider-button {
+  border: 1px solid #fff;
+  color: #fff;
+  cursor: pointer;
+  opacity: .7;
+  padding: 12px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: opacity .35s;
+}
+
+.viewport-slider-button:hover {
+  opacity: 1;
+  width: 45px;
+}
+
+.page-one {
+  color: #de76b7;
+  opacity: .9;
+  font-size: 55px;
+  font-weight: bold;
+  letter-spacing: -2px;
+  margin: 0;
+  margin-right: 40%;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+}
+
+.buttons {
+  color: orange;
+  font-size: 45px;
+  font-weight: bold;
+  margin-top: 50%;
+  flex-direction: column;
+}
+
+
