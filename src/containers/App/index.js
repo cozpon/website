@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link, MenuItem } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Slider from 'react-viewport-slider';
 import Particles from 'react-particles-js';
 
@@ -7,9 +7,11 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-
         <Slider>
           <Slider.Item style={{ backgroundColor: '#29225f' }}>
+          <div className="Header">
+            this gonna b my header
+          </div>
           <div className="Particles">
             <Particles params={{
               "particles": {
@@ -59,7 +61,7 @@ class App extends Component {
                 },
                 "move": {
                   "enable": true,
-                  "speed": 1.2,
+                  "speed": 1,
                   "direction": "bottom-left",
                   "random": true,
                   "straight": false,

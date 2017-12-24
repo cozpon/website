@@ -4,11 +4,9 @@ body {
 
 .viewport-slider-item {
   align-items: center;
-  color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  position: relative;
 }
 
 .viewport-slider-button {
@@ -28,6 +26,7 @@ body {
   width: 45px;
 }
 
+/* HOME PAGE */
 .page-one {
   color: #de76b7;
   opacity: .9;
@@ -43,7 +42,6 @@ body {
 }
 
 .buttons {
-  color: orange;
   font-size: 45px;
   font-weight: bold;
   margin-top: 25%;
@@ -52,9 +50,49 @@ body {
 }
 
 .Particles {
-  height: 100%;
+  height: 80%;
   position: fixed;
-  width: 100%;
+  width: 80%;
 }
 
+.Header {
+  padding-bottom: 450px;
+}
+
+/* ARTWORK */
+
+.Artwork {
+  align-items: center;
+  background-color: #555;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+}
+
+#art-text {
+  font-family: 'Slabo';
+  font-size: 54px;
+  flex-direction: column;
+  font-weight: bold;
+  display: flex;
+  text-align: center;
+  letter-spacing: -2px;
+}
+
+#art-button {
+  border: solid 1px  #fff;
+  opacity: .7;
+  padding: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: opacity .35s;
+  width: 55px;
+  margin-left: 47%;
+  margin-top: 50px;
+}
+
+#splash {
+  margin: 0;
+  margin-left: 15%;
+}
 
