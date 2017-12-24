@@ -18,8 +18,8 @@ class App extends Component {
           </Slider.Item>
           <Slider.Item style={{ backgroundColor: '#0c2759' }}>
             <div className="buttons">
-              <Link to='/artwork' style={{textDecoration: 'none'}}><MenuItem style={{ paddingLeft: 13 }}>Team 1</MenuItem></Link><br />
-              <Link to='/design'style={{ textDecoration: 'none' }}>Design.</Link><br />
+              <Link to='/artwork' style={{ color: 'white', textDecoration: 'none' }}>Artwork.</Link><br />
+              <Link to='/design'style={{ color: 'white', textDecoration: 'none' }}>Design.</Link><br />
             </div>
           </Slider.Item>
         </Slider>
