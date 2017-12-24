@@ -9,9 +9,6 @@ class App extends Component {
       <div className="App">
         <Slider>
           <Slider.Item style={{ backgroundColor: '#29225f' }}>
-          <div className="Header">
-            this gonna b my header
-          </div>
           <div className="Particles">
             <Particles params={{
               "particles": {
@@ -123,6 +120,9 @@ class App extends Component {
             </div>
           </Slider.Item>
           <Slider.Item style={{ backgroundColor: '#0c2759' }}>
+          <div className="bio" style={{ color: 'white'}}>
+          When u are a full stack designer and a photographer here is ur things
+          </div>
             <div className="buttons">
               <Link to='/artwork' style={{ color: 'white', textDecoration: 'none' }}>Artwork.</Link><br />
               <Link to='/design'style={{ color: 'white', textDecoration: 'none' }}>Design.</Link><br />
