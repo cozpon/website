@@ -5,11 +5,17 @@ class Artwork extends Component {
   render() {
     return (
       <div className="Artwork">
-          <div id="art-text">
-            It was going to be <br />a lonely trip back.
-          </div>
-            <img id="splash" src="http://payload309.cargocollective.com/1/12/398889/8499741/online01_1000.jpg">
-            </img>
+          <div className="container">
+            <div className="big"><img src="/images/1.jpg" alt=""/></div>
+            <div className="big"><img src="/images/10.jpg" alt="bike"/></div>
+            <div className="big"><img src="/images/3.jpg" alt=""/></div>
+            <div className="big"><img src="/images/2.jpg" alt=""/></div>
+            <div className="horizontal"><img src="/images/5.jpg" alt=""/></div>
+            <div className="horizontal"><img src="/images/6.jpg" alt=""/></div>
+            <div className="horizontal"><img src="/images/7.jpg" alt=""/></div>
+            <div className="bigger"><img src="/images/8.jpg" alt=""/></div>
+            <div className="bigger"><img src="/images/9.jpg" alt=""/></div>
+        </div>
           <div id="art-button">
             <Link to='/' style={{ color: 'white', textDecoration: 'none' }}>Home</Link>
           </div>

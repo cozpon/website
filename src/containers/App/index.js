@@ -121,12 +121,18 @@ class App extends Component {
           </Slider.Item>
           <Slider.Item style={{ backgroundColor: '#0c2759' }}>
           <div className="bio" style={{ color: 'white'}}>
-          When u are a full stack designer and a photographer here is ur things
-          </div>
+            <div>
+            Ricky Peters is a full stack web developer and photographer.<br />
+            </div>
+            <div>
+            This site was made using React, PostgreSQL, Express, and Node.js.
+            </div>
             <div className="buttons">
               <Link to='/artwork' style={{ color: 'white', textDecoration: 'none' }}>Artwork.</Link><br />
               <Link to='/design'style={{ color: 'white', textDecoration: 'none' }}>Design.</Link><br />
+              <Link to='/resume' style={{ color: 'white', textDecoration: 'none'}}>Resume.</Link>
             </div>
+          </div>
           </Slider.Item>
         </Slider>
       </div>
