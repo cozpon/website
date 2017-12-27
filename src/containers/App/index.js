@@ -125,7 +125,7 @@ class App extends Component {
             Ricky Peters is a full stack web developer and photographer.<br />
             </div>
             <div>
-            This site was made using React, PostgreSQL, Express, and Node.js.
+            This site was made using a React, PostgreSQL, Express, and Node.js stack.
             </div>
             <div className="buttons">
               <Link to='/artwork' style={{ color: 'white', textDecoration: 'none' }}>Artwork.</Link><br />

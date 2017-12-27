@@ -5,16 +5,23 @@ class Artwork extends Component {
   render() {
     return (
       <div className="Artwork">
-          <div className="container">
-            <div className="big"><img src="/images/1.jpg" alt=""/></div>
-            <div className="big"><img src="/images/10.jpg" alt="bike"/></div>
-            <div className="big"><img src="/images/3.jpg" alt=""/></div>
-            <div className="big"><img src="/images/2.jpg" alt=""/></div>
-            <div className="horizontal"><img src="/images/5.jpg" alt=""/></div>
-            <div className="horizontal"><img src="/images/6.jpg" alt=""/></div>
-            <div className="horizontal"><img src="/images/7.jpg" alt=""/></div>
-            <div className="bigger"><img src="/images/8.jpg" alt=""/></div>
-            <div className="bigger"><img src="/images/9.jpg" alt=""/></div>
+        <div className="wrapper">
+          <Link to='/artwork/moto' style={{ color: 'white', textDecoration: 'none' }}>
+            <div className="item1"><img src="http://payload309.cargocollective.com/1/12/398889/8499741/prt_280x188_1501212697.jpeg" alt=""/>
+            <br />always head west</div>
+          </Link>
+          <Link to='/artwork/undertow'>
+            <div className="item2"><img src="http://payload175.cargocollective.com/1/12/398889/5818098/prt_280x188_1371293056.jpg" alt=""/>
+            <br />undertow</div>
+          </Link>
+          <Link to='/artwork/hawaii' style={{ color: 'white', textDecoration: 'none' }}>
+            <div className="item3"><img src="http://payload228.cargocollective.com/1/12/398889/6868220/prt_280x188_1409776359.jpg" alt=""/>
+            <br />Hawaii</div>
+          </Link>
+          <Link to='/artwork/complicity' style={{ color: 'white', textDecoration: 'none' }}>
+            <div className="item4"><img src="http://payload312.cargocollective.com/1/12/398889/8540354/prt_280x188_1432849228.jpg" alt=""/>
+            <br />complicity</div>
+          </Link>
         </div>
           <div id="art-button">
             <Link to='/' style={{ color: 'white', textDecoration: 'none' }}>Home</Link>
