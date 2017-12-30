@@ -42,14 +42,15 @@ body {
 }
 
 .buttons {
-  font-size: 45px;
+  font-size: 50px;
   font-weight: bold;
   flex-direction: column;
   font-family: 'Slabo';
 }
 
+
 .bio {
-  font-family: 'Slabo';
+  font-family: 'Dosis';
   display: grid;
     grid-template-rows: 60px 135px;
     grid-template-columns: max-content;
@@ -63,9 +64,6 @@ body {
   width: 80%;
 }
 
-.Header {
-  padding-bottom: 450px;
-}
 
 /* ARTWORK */
 
@@ -109,11 +107,11 @@ body {
 }
 
 .container {
-    display: grid;
-    grid-gap: 5px;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 2fr));
-    grid-auto-rows: auto;
-    grid-auto-flow: dense;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 2fr));
+  grid-auto-rows: auto;
+  grid-auto-flow: dense;
 }
 
 .horizontal {
@@ -123,7 +121,7 @@ body {
 }
 
 .wrapper {
-   display: grid;
+  display: grid;
   grid-template-columns: 2fr;
   grid-column-gap: 10px;
 }
@@ -162,12 +160,15 @@ body {
   grid-row: 3;
 }
 
-
 .header-links{
-  background-color: black;
+  font-family: 'Inconsolata';
+  background-color: #ffffff;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 1.5vw;
+  font-size: 20px;
+  text-shadow: 2px 2px 5px #666;
+  text-transform: uppercase;
 }
 
 #footer {

@@ -1,23 +1,39 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Header from '../../components/header.component';
+import Slider from 'react-viewport-slider';
 
 class MotoTrip extends Component {
   render() {
     return (
-      <div className="Artwork">
+      <div>
       <Header />
-          <div className="container">
-            <div className="big"><img src="/images/1.jpg" alt=""/></div>
-            <div className="big"><img src="/images/10.jpg" alt="bike"/></div>
-            <div className="big"><img src="/images/3.jpg" alt=""/></div>
-            <div className="big"><img src="/images/2.jpg" alt=""/></div>
-            <div className="horizontal"><img src="/images/5.jpg" alt=""/></div>
-            <div className="horizontal"><img src="/images/6.jpg" alt=""/></div>
-            <div className="horizontal"><img src="/images/7.jpg" alt=""/></div>
-            <div className="bigger"><img src="/images/8.jpg" alt=""/></div>
-            <div className="bigger"><img src="/images/9.jpg" alt=""/></div>
-        </div>
+      <Slider>
+        <Slider.Item style={{ backgroundColor: '#666' }}>
+        <img src="http://payload309.cargocollective.com/1/12/398889/8499741/online01_1000.jpg"/>
+        </Slider.Item>
+
+        <Slider.Item style={{ backgroundColor: '#666' }}>
+        <img src="http://payload309.cargocollective.com/1/12/398889/8499741/Ricky_3_1000.jpeg"/>
+        </Slider.Item>
+
+        <Slider.Item style={{ backgroundColor: '#666' }}>
+        <img src="http://payload309.cargocollective.com/1/12/398889/8499741/Ricky_10_1000.jpg"/>
+        </Slider.Item>
+
+        <Slider.Item style={{ backgroundColor: '#666' }}>
+        <img src="http://payload309.cargocollective.com/1/12/398889/8499741/Untitled-2w_1_1000.jpg"/>
+        </Slider.Item>
+
+        <Slider.Item style={{ backgroundColor: '#666' }}>
+        <img src="http://payload309.cargocollective.com/1/12/398889/8499741/oceanlake_1000.jpg"/>
+        </Slider.Item>
+
+        <Slider.Item style={{ backgroundColor: '#666' }}>
+        Motorcycle trip across the united states of america done alone with a hammock and a honda shadow
+        </Slider.Item>
+      </Slider>
+
           <div id="art-button">
             <Link to='/' style={{ color: 'white', textDecoration: 'none' }}>Home</Link>
           </div>
