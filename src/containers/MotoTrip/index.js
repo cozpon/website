@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import Header from '../../components/header.component';
 
 class MotoTrip extends Component {
   render() {
     return (
       <div className="Artwork">
+      <Header />
           <div className="container">
             <div className="big"><img src="/images/1.jpg" alt=""/></div>
             <div className="big"><img src="/images/10.jpg" alt="bike"/></div>

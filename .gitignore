@@ -17,6 +17,8 @@ resume.json
 .env.development.local
 .env.test.local
 .env.production.local
+public/images
+public/logos
 
 npm-debug.log*
 yarn-debug.log*

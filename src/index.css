@@ -161,3 +161,23 @@ body {
   grid-column: 1;
   grid-row: 3;
 }
+
+
+.header-links{
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5vw;
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  height: 12%;
+  width: 100%;
+  padding-top: 2px;
+  padding-bottom: 8px;
+}

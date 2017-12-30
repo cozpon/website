@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import Header from '../../components/header.component';
 
 class Undertow extends Component {
   render() {
     return (
       <div className="Undertow">
+      <Header />
           <div className="">
             <div className="horizontal"><img src="http://payload175.cargocollective.com/1/12/398889/5818098/04%20Undertow_905.jpg" alt=""/></div>
             <div className="horizontal"><img src="http://payload175.cargocollective.com/1/12/398889/5818098/05%20Undertow_905.jpg" alt=""/></div>

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Slider from 'react-viewport-slider';
 import Particles from 'react-particles-js';
+import Footer from '../../components/footer.component';
 
 class App extends Component {
   render() {
@@ -133,6 +134,7 @@ class App extends Component {
               <a href='https://registry.jsonresume.org/ee740269' style={{ color: 'white', textDecoration: 'none' }}>Resume.</a>
             </div>
           </div>
+          <Footer />
           </Slider.Item>
         </Slider>
       </div>
