@@ -14,7 +14,8 @@ import reducers from './reducers';
 import App from './containers/App';
 import Artwork from './containers/Artwork';
 import Design from './containers/Design';
-import Resume from './containers/Resume';
+import MotoTrip from './containers/MotoTrip';
+import Undertow from './containers/Undertow';
 
 /* Sassy */
 import './index.css';
@@ -35,7 +36,8 @@ ReactDOM.render(
         <Route exact path="/" component={ App } />
         <Route exact path="/artwork" component={ Artwork } />
         <Route exact path="/design" component={ Design } />
-        <Route exact path="/resume" component={ Resume } />
+        <Route exact path="/artwork/moto" component={ MotoTrip } />
+        <Route exact path="/artwork/undertow" component={ Undertow } />
       </div>
     </Router>
   </Provider>,

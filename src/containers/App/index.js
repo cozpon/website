@@ -130,7 +130,7 @@ class App extends Component {
             <div className="buttons">
               <Link to='/artwork' style={{ color: 'white', textDecoration: 'none' }}>Artwork.</Link><br />
               <Link to='/design'style={{ color: 'white', textDecoration: 'none' }}>Design.</Link><br />
-              <a href='https://registry.jsonresume.org/49acd86e' style={{ color: 'white', textDecoration: 'none' }}>Resume.</a>
+              <a href='https://registry.jsonresume.org/ee740269' style={{ color: 'white', textDecoration: 'none' }}>Resume.</a>
             </div>
           </div>
           </Slider.Item>

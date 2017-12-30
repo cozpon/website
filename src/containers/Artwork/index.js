@@ -10,7 +10,7 @@ class Artwork extends Component {
             <div className="item1"><img src="http://payload309.cargocollective.com/1/12/398889/8499741/prt_280x188_1501212697.jpeg" alt=""/>
             <br />always head west</div>
           </Link>
-          <Link to='/artwork/undertow'>
+          <Link to='/artwork/undertow' style={{ color: 'white', textDecoration: 'none' }}>
             <div className="item2"><img src="http://payload175.cargocollective.com/1/12/398889/5818098/prt_280x188_1371293056.jpg" alt=""/>
             <br />undertow</div>
           </Link>
