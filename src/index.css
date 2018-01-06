@@ -47,6 +47,14 @@ img {
   font-family: 'Slabo';
 }
 
+.profile-photo {
+  min-width: 20%;
+  max-width: 20%;
+  margin-right: 300px;
+  display: grid;
+  z-index: 1;
+}
+
 .buttons {
   font-size: 50px;
   font-weight: bold;
@@ -153,20 +161,7 @@ img {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
-.item1 {
-  grid-area: a;
-}
-.item2 {
-  grid-area: b;
-}
-.item3 {
-  grid-area: c;
-}
-.item4 {
-  grid-area: d;
-  grid-column: 1;
-  grid-row: 3;
-}
+
 
 .header-links{
   font-family: 'Inconsolata';

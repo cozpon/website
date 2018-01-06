@@ -2,13 +2,19 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Header from '../../components/header.component';
 import Footer from '../../components/footer.component';
+import StackGrid from "react-stack-grid";
+import sizeMe from 'react-sizeme';
 
 class Artwork extends Component {
+
   render() {
+    const { width } = this.props.size;
     return (
       <div className="Artwork">
       <Header />
-        <div className="wrapper">
+      <StackGrid
+        columnWidth={width <= 650 ? '100%' : '25%'}
+        monitorImagesLoaded={true} >
           <Link to='/artwork/moto' style={{ color: 'white', textDecoration: 'none' }}>
             <div className="item1"><img src="http://payload309.cargocollective.com/1/12/398889/8499741/prt_280x188_1501212697.jpeg" alt=""/>
             <br />always head west</div>
@@ -25,15 +31,16 @@ class Artwork extends Component {
             <div className="item4"><img src="http://payload312.cargocollective.com/1/12/398889/8540354/prt_280x188_1432849228.jpg" alt=""/>
             <br />complicity</div>
           </Link>
-        </div>
+
           <div id="art-button">
             <Link to='/' style={{ color: 'white', textDecoration: 'none' }}>Home</Link>
           </div>
-          <Footer />
+      <Footer />
+      </StackGrid>
       </div>
     );
   }
 }
 
-export default Artwork;
+export default sizeMe()(Artwork);
 
