@@ -6,36 +6,56 @@ import sizeMe from 'react-sizeme';
 
 class MotoTrip extends Component {
   render() {
-    const { width } = this.props;
-
+    const { width } = this.props.size;
     return (
       <div>
-      <Header />
-      <StackGrid
-        columnWidth={width <= 768 ? '100%' : '50%'}
-        monitorImagesLoaded={false} >
-        <div>
-        <img src="http://payload309.cargocollective.com/1/12/398889/8499741/online01_1000.jpg"/>
-        </div>
-        <div>
-        <img src="http://payload309.cargocollective.com/1/12/398889/8499741/Ricky_10_1000.jpg"/>
-        </div>
-        <div>
-        <img src="http://payload309.cargocollective.com/1/12/398889/8499741/Ricky_3_1000.jpeg"/>
-        </div>
-        <div>
-        <img src="http://payload309.cargocollective.com/1/12/398889/8499741/Untitled-2s_1000.jpg"/>
-        </div>
-        <div>
-        <img src="http://payload309.cargocollective.com/1/12/398889/8499741/Ricky_10_1000.jpg"/>
-        </div>
-
-
-
+        <Header />
+        <StackGrid
+          columnWidth={width <= 800 ? '100%' : '50%'}
+          monitorImagesLoaded={true} >
+          <div>
+            <img src="/images/1.jpg"/>
+          </div>
+          <div>
+            <img src="/images/2.jpg"/>
+          </div>
+          <div>
+            <img src="/images/3.jpg"/>
+          </div>
+          <div>
+            <img src="/images/4.jpg"/>
+          </div>
+          <div>
+            <img src="/images/5.jpg"/>
+          </div>
+          <div>
+            <img src="/images/6.jpg"/>
+          </div>
+          <div>
+            <img src="/images/7.jpg"/>
+          </div>
+          <div>
+            <img src="/images/8.jpg"/>
+          </div>
+          <div>
+            <img src="/images/9.jpg"/>
+          </div>
+          <div>
+            <img src="/images/10.jpg"/>
+          </div>
+          <div>
+            <img src="/images/11.jpg"/>
+          </div>
+          <div>
+            <img src="/images/12.jpg"/>
+          </div>
+          <div>
+            <img src="/images/text.jpg"/>
+          </div>
         </StackGrid>
         <div id="art-button">
-            <Link to='/' style={{ color: 'white', textDecoration: 'none' }}>Home</Link>
-          </div>
+          <Link to='/' style={{ color: 'white', textDecoration: 'none' }}>Home</Link>
+        </div>
       </div>
     );
   }
