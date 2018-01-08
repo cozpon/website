@@ -1,31 +1,35 @@
 body {
   font-family: 'Helvetica Neue', Helvetica, arial, sans-serif;
-  margin: 0; }
+  margin: 0;
+}
 
 img {
   max-width: 100%;
   height: auto;
-  vertical-align: top; }
+  vertical-align: top;
+}
 
 .viewport-slider-item {
   align-items: center;
   display: flex;
   flex-direction: row-reverse;
-  justify-content: center; }
-  .viewport-slider-item .viewport-slider-button {
-    border: 1px solid #fff;
-    color: #fff;
-    cursor: pointer;
-    opacity: .7;
-    padding: 12px;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: opacity .35s; }
-  .viewport-slider-item .viewport-slider-button:hover {
+  justify-content: center;
+  .viewport-slider-button {
+      border: 1px solid #fff;
+      color: #fff;
+      cursor: pointer;
+      opacity: .7;
+      padding: 12px;
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: opacity .35s;
+    }
+  .viewport-slider-button:hover {
     opacity: 1;
-    width: 45px; }
-
+    width: 45px;
+  }
+}
 /* HOME PAGE */
 .page-one {
   color: #fd89d1;
@@ -39,23 +43,26 @@ img {
   text-transform: uppercase;
   display: flex;
   flex-direction: column;
-  font-family: 'Slabo'; }
+  font-family: 'Slabo';
+
   @media screen and (max-width: 500px) {
-    .page-one {
-      font-size: 35px;
-      margin-left: 20px; } }
+    font-size: 35px;
+    margin-left: 20px;
+  }
+}
 
 .profile-photo {
   min-width: 20%;
   max-width: 20%;
   margin-right: 10%;
   display: grid;
-  z-index: 1; }
+  z-index: 1;
   @media screen and (max-width: 500px) {
-    .profile-photo {
-      margin-right: 10%;
-      max-width: 50%;
-      margin-bottom: 65%; } }
+    margin-right: 10%;
+    max-width: 50%;
+    margin-bottom: 65%;
+  }
+}
 
 .buttons {
   margin: 0;
@@ -65,39 +72,45 @@ img {
   font-size: 50px;
   font-weight: bold;
   flex-direction: column;
-  font-family: 'Slabo'; }
-  @media screen and (max-width: 500px) {
-    .buttons {
-      font-size: 45px;
-      margin-left: 15%;
-      margin-top: 15%; } }
-
-#text {
-  color: #888;
-  font-size: 16px;
   font-family: 'Slabo';
-  padding: 10px; }
   @media screen and (max-width: 500px) {
-    #text {
-      margin-left: 10%;
-      padding: 4%; } }
+    font-size: 45px;
+    margin-left: 15%;
+    margin-top: 15%;
+  }
+}
+  #text {
+    color: #888;
+    font-size: 16px;
+    font-family: 'Slabo';
+    padding: 10px;
+    @media screen and (max-width: 500px) {
+    margin-left: 10%;
+    padding: 4%;
+    }
+  }
 
 .Particles {
   height: 80%;
   position: fixed;
-  width: 80%; }
+  width: 80%;
+}
+
 
 /* ARTWORK */
+
 .Artwork {
   align-items: center;
   background: linear-gradient(white 20%, grey 70%);
   width: 100%;
   position: inherit;
-  min-height: 860px; }
+  min-height: 860px;
+}
 
 .art-images {
   position: sticky;
-  margin: 2px auto auto 30px; }
+  margin: 2px auto auto 30px;
+}
 
 #art-text {
   font-family: 'Slabo';
@@ -108,12 +121,14 @@ img {
   text-align: center;
   letter-spacing: 5px;
   text-shadow: 2px 2px 5px #666;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+}
 
 #art-thumbs {
   margin-top: 20%;
   display: grid;
-  justify-content: space-between; }
+  justify-content: space-between;
+}
 
 #art-button {
   border: solid 1px  #fff;
@@ -123,33 +138,38 @@ img {
   text-transform: uppercase;
   transition: opacity .35s;
   width: 55px;
-  margin-left: 250px; }
+  margin-left: 250px;
+}
 
 #art-button:hover {
   opacity: 1;
-  width: 57px; }
+  width: 57px;
+}
 
 .container {
   display: grid;
   grid-gap: 5px;
   grid-template-columns: repeat(auto-fit, minmax(150px, 2fr));
   grid-auto-rows: auto;
-  grid-auto-flow: dense; }
+  grid-auto-flow: dense;
+}
 
 .wrapper {
   display: grid;
   grid-template-columns: 2fr;
   grid-column-gap: 10px;
-  justify-items: center; }
+  justify-items: center;
+}
 
 .Undertow {
   align-items: center;
   background-color: 'white';
   width: 100%;
   height: 100%;
-  position: inherit; }
+  position: inherit;
+}
 
-.header-links {
+.header-links{
   font-family: 'Inconsolata';
   background-color: #ffffff;
   display: flex;
@@ -157,7 +177,8 @@ img {
   padding: 1.5vw;
   font-size: 20px;
   text-shadow: 2px 2px 5px #666;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+}
 
 #footer {
   display: flex;
@@ -168,8 +189,10 @@ img {
   height: 12%;
   width: 100%;
   padding-top: 2px;
-  padding-bottom: 8px; }
+  padding-bottom: 8px;
+
   @media screen and (max-width: 500px) {
-    #footer {
-      max-width: 50%;
-      margin-left: 25%; } }
+    max-width: 50%;
+    margin-left: 25%;
+  }
+}

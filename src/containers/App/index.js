@@ -128,7 +128,7 @@ class App extends Component {
               <div id="text">
               Ricky Peters is a full stack web developer and photographer.<br />
               </div>
-              <div>
+              <div id="text">
               This site was made using React, PostgreSQL, Express, and Node.js.
               </div>
             <div className="buttons">
