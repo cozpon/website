@@ -1,46 +1,101 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import Header from '../../components/header.component';
-import Slider from 'react-viewport-slider';
+import StackGrid from "react-stack-grid";
+import sizeMe from 'react-sizeme';
+import LazyLoad from 'react-lazyload';
 
 class MotoTrip extends Component {
   render() {
+    const { width } = this.props.size;
     return (
       <div>
-      <Header />
-      <Slider>
-        <Slider.Item style={{ backgroundColor: '#666' }}>
-        <img src="http://payload309.cargocollective.com/1/12/398889/8499741/online01_1000.jpg"/>
-        </Slider.Item>
-
-        <Slider.Item style={{ backgroundColor: '#666' }}>
-        <img src="http://payload309.cargocollective.com/1/12/398889/8499741/Ricky_3_1000.jpeg"/>
-        </Slider.Item>
-
-        <Slider.Item style={{ backgroundColor: '#666' }}>
-        <img src="http://payload309.cargocollective.com/1/12/398889/8499741/Ricky_10_1000.jpg"/>
-        </Slider.Item>
-
-        <Slider.Item style={{ backgroundColor: '#666' }}>
-        <img src="http://payload309.cargocollective.com/1/12/398889/8499741/Untitled-2w_1_1000.jpg"/>
-        </Slider.Item>
-
-        <Slider.Item style={{ backgroundColor: '#666' }}>
-        <img src="http://payload309.cargocollective.com/1/12/398889/8499741/oceanlake_1000.jpg"/>
-        </Slider.Item>
-
-        <Slider.Item style={{ backgroundColor: '#666' }}>
-        Motorcycle trip across the united states of america done alone with a hammock and a honda shadow
-        </Slider.Item>
-      </Slider>
-
-          <div id="art-button">
-            <Link to='/' style={{ color: 'white', textDecoration: 'none' }}>Home</Link>
+        <Header />
+        <StackGrid
+          columnWidth={width <= 800 ? '100%' : '50%'}
+          monitorImagesLoaded={true} >
+          <div><LazyLoad throttle={200} height={300}>
+            <img src="/images/26.jpg" alt=""/></LazyLoad>
+          </div>
+          <div><LazyLoad throttle={200} height={300}>
+            <img src="/images/1.jpg" alt=""/></LazyLoad>
+          </div>
+          <div><LazyLoad throttle={200} height={300}>
+            <img src="/images/25.jpg" alt=""/></LazyLoad>
+          </div>
+          <div><LazyLoad throttle={200} height={300}>
+            <img src="/images/2.jpg" alt=""/></LazyLoad>
+          </div>
+          <div><LazyLoad throttle={200} height={300}>
+            <img src="/images/3.jpg" alt=""/></LazyLoad>
+          </div>
+          <div><LazyLoad throttle={200} height={300}>
+            <img src="/images/4.jpg" alt=""/></LazyLoad>
+          </div>
+          <div><LazyLoad throttle={200} height={300}>
+            <img src="/images/5.jpg" alt=""/></LazyLoad>
+          </div>
+          <div><LazyLoad throttle={200} height={300}>
+            <img src="/images/6.jpg" alt=""/></LazyLoad>
+          </div>
+          <div><LazyLoad throttle={200} height={300}>
+            <img src="/images/7.jpg" alt=""/></LazyLoad>
+          </div>
+          <div><LazyLoad throttle={200} height={300}>
+            <img src="/images/text2.jpg" alt=""/></LazyLoad>
+          </div>
+          <div><LazyLoad throttle={200} height={300}>
+            <img src="/images/9.jpg" alt=""/></LazyLoad>
+          </div>
+          <div><LazyLoad throttle={200} height={300}>
+            <img src="/images/10.jpg" alt=""/></LazyLoad>
+          </div>
+          <div><LazyLoad throttle={200} height={300}>
+            <img src="/images/11.jpg" alt=""/></LazyLoad>
+          </div>
+          <div><LazyLoad throttle={200} height={300}>
+            <img src="/images/12.jpg" alt=""/></LazyLoad>
+          </div>
+          <div><LazyLoad throttle={200} height={300}>
+            <img src="/images/8.jpg" alt=""/></LazyLoad>
+          </div>
+          <div><LazyLoad throttle={200} height={300}>
+            <img src="/images/13.jpg" alt=""/></LazyLoad>
+          </div>
+          <div><LazyLoad throttle={200} height={300}>
+            <img src="/images/14.jpg" alt=""/></LazyLoad>
+          </div>
+          <div><LazyLoad throttle={200} height={300}>
+            <img src="/images/15.jpg" alt=""/></LazyLoad>
+          </div>
+          <div><LazyLoad throttle={200} height={300}>
+            <img src="/images/16.jpg" alt=""/></LazyLoad>
+          </div>
+          <div><LazyLoad throttle={200} height={300}>
+            <img src="/images/17.jpg" alt=""/></LazyLoad>
+          </div>
+          <div><LazyLoad throttle={200} height={300}>
+            <img src="/images/18.jpg" alt=""/></LazyLoad>
+          </div>
+          <div><LazyLoad throttle={200} height={300}>
+            <img src="/images/19.jpg" alt=""/></LazyLoad>
+          </div>
+          <div><LazyLoad throttle={200} height={300}>
+            <img src="/images/20.jpg" alt=""/></LazyLoad>
+          </div>
+          <div><LazyLoad throttle={200} height={300}>
+            <img src="/images/22.jpg" alt=""/></LazyLoad>
+          </div>
+          <div><LazyLoad throttle={200} height={300}>
+            <img src="/images/23.jpg" alt=""/></LazyLoad>
+          </div>
+          </StackGrid>
+          <div>
+            <img src="/images/24.jpg" alt=""/>
           </div>
       </div>
     );
   }
 }
 
-export default MotoTrip;
+export default sizeMe()(MotoTrip);
 
