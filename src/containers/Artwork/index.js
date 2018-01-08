@@ -44,13 +44,14 @@ class Artwork extends Component {
                 <img src="http://payload312.cargocollective.com/1/12/398889/8540354/prt_280x188_1432849228.jpg" alt=""/><br />
                 <div id="art-text">
                   complicity
+                  <br />
+                  (under construction)
                 </div>
               </div>
             </Link>
 
         </StackGrid>
       </div>
-      <Footer />
       </div>
     );
   }

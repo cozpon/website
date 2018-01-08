@@ -6,7 +6,10 @@ class Design extends Component {
     return (
       <div className="Design">
       <Header />
-        I'm gonna put my design SH in here
+like most humans and websites, this part is under construction
+<br />
+<br />
+    <img src="http://www.grovecityohio.gov/wp-content/uploads/2015/05/RoadClosed16.jpg"/>
           <div id="art-button">
             <Link to='/' style={{ color: 'black', textDecoration: 'none' }}>Home</Link>
           </div>
