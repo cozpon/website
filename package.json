@@ -31,6 +31,7 @@
     "fs-extra": "3.0.1",
     "html-webpack-plugin": "2.29.0",
     "jest": "20.0.4",
+    "node-sass-chokidar": "0.0.3",
     "object-assign": "4.1.1",
     "passport": "^0.4.0",
     "pg": "^7.4.1",
@@ -42,8 +43,11 @@
     "react-dev-utils": "^4.2.1",
     "react-dom": "^16.2.0",
     "react-images": "^0.5.13",
+    "react-lazyload": "^2.3.0",
     "react-redux": "^5.0.6",
     "react-router-dom": "^4.2.2",
+    "react-sizeme": "^2.3.6",
+    "react-stack-grid": "^0.7.0",
     "react-viewport-slider": "^1.0.0",
     "redux": "^3.7.2",
     "redux-thunk": "^2.2.0",
@@ -57,6 +61,8 @@
     "whatwg-fetch": "2.0.3"
   },
   "scripts": {
+    "build-css": "node-sass-chokidar src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",

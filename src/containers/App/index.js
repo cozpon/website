@@ -121,20 +121,24 @@ class App extends Component {
             </div>
           </Slider.Item>
           <Slider.Item style={{ backgroundColor: '#0c2759' }}>
-          <div className="bio" style={{ color: 'white'}}>
-            <div>
-            Ricky Peters is a full stack web developer and photographer.<br />
+
+            <div className="profile-photo">
+              <img src="/images/Ricky.jpg" alt="" />
             </div>
-            <div>
-            This site was made using a React, PostgreSQL, Express, and Node.js stack.
-            </div>
+            <div className="bio" style={{ color: 'white'}}>
+              <div id="text">
+              Ricky Peters is a full stack web developer and photographer.<br />
+              </div>
+              <div id="text">
+              This site was made using React, PostgreSQL, Express, and Node.js.
+              </div>
             <div className="buttons">
               <Link to='/artwork' style={{ color: 'white', textDecoration: 'none' }}>Artwork.</Link><br />
               <Link to='/design'style={{ color: 'white', textDecoration: 'none' }}>Design.</Link><br />
               <a href='https://registry.jsonresume.org/ee740269' style={{ color: 'white', textDecoration: 'none' }}>Resume.</a>
             </div>
-          </div>
-          <Footer />
+            </div>
+            <Footer />
           </Slider.Item>
         </Slider>
       </div>

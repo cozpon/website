@@ -1,15 +1,13 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Header from '../../components/header.component';
-class Design extends Component {
+class Hawaii extends Component {
   render() {
     return (
-      <div className="Design">
+      <div className="Hawaii">
       <Header />
-like most humans and websites, this part is under construction
-<br />
-<br />
-    <img src="http://www.grovecityohio.gov/wp-content/uploads/2015/05/RoadClosed16.jpg"/>
+        like a human, this website is under construction and always growing...
+        unfortunately I haven't gotten to this yet
           <div id="art-button">
             <Link to='/' style={{ color: 'black', textDecoration: 'none' }}>Home</Link>
           </div>
@@ -18,4 +16,4 @@ like most humans and websites, this part is under construction
   }
 }
 
-export default Design;
+export default Hawaii;

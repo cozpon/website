@@ -16,7 +16,7 @@ import Artwork from './containers/Artwork';
 import Design from './containers/Design';
 import MotoTrip from './containers/MotoTrip';
 import Undertow from './containers/Undertow';
-
+import Hawaii from './containers/Hawaii';
 
 /* Sassy */
 import './index.css';
@@ -39,6 +39,7 @@ ReactDOM.render(
         <Route exact path="/design" component={ Design } />
         <Route exact path="/artwork/moto" component={ MotoTrip } />
         <Route exact path="/artwork/undertow" component={ Undertow } />
+        <Route exact path="/artwork/hawaii" component={ Hawaii } />
       </div>
     </Router>
   </Provider>,
