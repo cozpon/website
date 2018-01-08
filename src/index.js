@@ -18,7 +18,6 @@ import MotoTrip from './containers/MotoTrip';
 import Undertow from './containers/Undertow';
 import Hawaii from './containers/Hawaii';
 
-
 /* Sassy */
 import './index.css';
 

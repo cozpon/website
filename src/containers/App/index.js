@@ -121,6 +121,7 @@ class App extends Component {
             </div>
           </Slider.Item>
           <Slider.Item style={{ backgroundColor: '#0c2759' }}>
+
             <div className="profile-photo">
               <img src="/images/Ricky.jpg" alt="" />
             </div>
