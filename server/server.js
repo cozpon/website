@@ -5,7 +5,7 @@ const session = require('express-session');
 const redis = require('connect-redis')(session);
 const db = require('./models');
 const path = require('path');
-const PORT = process.env.PORT || 8888;
+const PORT = require(`./config/${process.env.NODE_ENV}`).PORT
 
 const app = express();
 
