@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Slider from 'react-viewport-slider';
 import Particles from 'react-particles-js';
+import Footer from '../../components/footer.component';
 
 class App extends Component {
   render() {
@@ -120,19 +121,24 @@ class App extends Component {
             </div>
           </Slider.Item>
           <Slider.Item style={{ backgroundColor: '#0c2759' }}>
-          <div className="bio" style={{ color: 'white'}}>
-            <div>
-            Ricky Peters is a full stack web developer and photographer.<br />
+
+            <div className="profile-photo">
+              <img src="/images/Ricky.jpg" alt="" />
             </div>
-            <div>
-            This site was made using React, PostgreSQL, Express, and Node.js.
-            </div>
+            <div className="bio" style={{ color: 'white'}}>
+              <div id="text">
+              Ricky Peters is a full stack web developer and photographer.<br />
+              </div>
+              <div id="text">
+              This site was made using React, PostgreSQL, Express, and Node.js.
+              </div>
             <div className="buttons">
               <Link to='/artwork' style={{ color: 'white', textDecoration: 'none' }}>Artwork.</Link><br />
               <Link to='/design'style={{ color: 'white', textDecoration: 'none' }}>Design.</Link><br />
-              <Link to='/resume' style={{ color: 'white', textDecoration: 'none'}}>Resume.</Link>
+              <a href='https://registry.jsonresume.org/ee740269' style={{ color: 'white', textDecoration: 'none' }}>Resume.</a>
             </div>
-          </div>
+            </div>
+            <Footer />
           </Slider.Item>
         </Slider>
       </div>

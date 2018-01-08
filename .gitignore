@@ -3,6 +3,7 @@
 # dependencies
 /node_modules
 config/
+resume.json
 
 # testing
 /coverage
@@ -16,6 +17,8 @@ config/
 .env.development.local
 .env.test.local
 .env.production.local
+public/images
+public/logos
 
 npm-debug.log*
 yarn-debug.log*
