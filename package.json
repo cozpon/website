@@ -61,7 +61,6 @@
     "webpack-manifest-plugin": "1.3.2",
     "whatwg-fetch": "2.0.3"
   },
-  "proxy": "http://localhost:3000",
   "scripts": {
     "build-css": "node-sass-chokidar src/ -o src/",
     "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
@@ -124,5 +123,6 @@
   "bugs": {
     "url": "https://github.com/cozpon/website/issues"
   },
-  "homepage": "./cozpon/apps/website"
+  "homepage": "http://www.rickypeters.net",
+  "proxy": "http://localhost:8000"
 }
