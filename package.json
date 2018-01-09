@@ -123,5 +123,5 @@
   "bugs": {
     "url": "https://github.com/cozpon/website/issues"
   },
-  "homepage": "/cozpon/apps/website"
+  "homepage": "./cozpon/apps/website"
 }
